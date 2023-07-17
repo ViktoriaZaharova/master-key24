@@ -78,6 +78,10 @@ body {
   text-edge: cap;
 }
 
+html, body {
+  overflow-x: hidden;
+}
+
 img {
   display: block;
   max-width: 100%;
@@ -298,6 +302,7 @@ h3 {
 h4 {
   font-size: 24px;
   font-weight: 600;
+  line-height: 110%;
 }
 
 .m-64 {

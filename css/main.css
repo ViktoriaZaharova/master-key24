@@ -108,8 +108,6 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
   border-radius: 20px;
   background: #9E9E9E;
 }
@@ -122,6 +120,9 @@
       -ms-flex-align: center;
           align-items: center;
   margin: 0 0 0 auto;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
 }
 .form-call [type=submit] {
   padding: 20px 30px;
@@ -298,7 +299,6 @@
   border-radius: 50%;
   width: 56px;
   height: 56px;
-  margin: 0 0 13px;
 }
 
 .services-shop {
@@ -393,6 +393,9 @@
 .stages-work {
   margin: 33px 0;
 }
+.stages-work h2 {
+  margin: 0 auto 64px;
+}
 
 .stages-work-box {
   margin: 0 auto 24px 0;
@@ -406,6 +409,7 @@
   margin: 0 0 32px;
   border-radius: 50%;
   height: 56px;
+  min-width: 56px;
   width: 56px;
   background: #E35332;
   font-size: 24px;
