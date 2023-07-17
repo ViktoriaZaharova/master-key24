@@ -20,3 +20,137 @@ footer {
 .link-developer img {
   margin: 0 0 0 14px;
 }
+
+.modal-dialog {
+  max-width: 1400px;
+}
+
+.modal-content {
+  background: #9E9E9E;
+  border: none;
+  border-radius: 20px;
+  padding: 64px;
+}
+.modal-content .form-call {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 32px 0 0;
+}
+.modal-content .form-call label {
+  width: 100%;
+  margin: 0 0 32px;
+  padding: 0;
+  text-align: left;
+}
+.modal-content .form-call input {
+  text-align: left;
+}
+.modal-content .form-call button {
+  height: 51px;
+  padding: 10px 26px;
+  border-radius: 10px;
+}
+.modal-content .form-call .consent {
+  text-align: left;
+}
+
+.form-call {
+  width: 100%;
+}
+.form-call__footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.form-call .consent {
+  max-width: 380px;
+  margin: 0 0 0 auto;
+}
+
+.btn-close {
+  position: absolute;
+  margin: 0;
+  z-index: 1;
+  opacity: 1;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border: none;
+  top: -40px;
+  right: -40px;
+}
+
+.modal-body {
+  padding: 0;
+  border: none;
+  border-radius: 0;
+}
+
+.modal-image-manager {
+  position: absolute;
+  bottom: 0;
+  left: 64px;
+  max-width: 472px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#callModal .modal-body {
+  width: calc(100% - 636px);
+  margin: 0 0 0 auto;
+}
+
+.modal-title {
+  line-height: 90%;
+  font-size: 70px;
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 0 0 64px;
+}
+
+.phone-callback {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 32px 0 64px;
+  font-size: 40px;
+  color: #fff;
+  line-height: 90%;
+}
+.phone-callback .svg-icon {
+  margin: 0 12px 0 0;
+  fill: #E35332;
+  width: 32px;
+  height: 32px;
+}
+
+#thanksModal .modal-body {
+  max-width: 1016px;
+  margin: 0 auto;
+}
+#thanksModal .modal-title {
+  max-width: 640px;
+  margin: 0 auto 64px;
+}
+#thanksModal .phone-callback {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 32px auto 0;
+}

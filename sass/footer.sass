@@ -14,3 +14,100 @@ footer
 		color: $accent
 	img
 		margin: 0 0 0 14px	
+
+.modal-dialog
+	max-width: 1400px
+
+.modal-content
+	background: #9E9E9E
+	border: none
+	border-radius: 20px
+	padding: 64px
+	.form-call
+		flex-wrap: wrap
+		margin: 32px 0 0
+		label
+			width: 100%
+			margin: 0 0 32px
+			padding: 0
+			text-align: left
+		input
+			text-align: left	
+		button
+			height: 51px
+			padding: 10px 26px
+			border-radius: 10px
+		.consent
+			text-align: left	
+
+.form-call
+	width: 100%
+	&__footer
+		width: 100%
+		display: flex
+		align-items: center
+	.consent
+		max-width: 380px
+		margin: 0 0 0 auto			
+
+.btn-close
+	position: absolute
+	margin: 0
+	z-index: 1
+	opacity: 1
+	cursor: pointer
+	width: 80px
+	height: 80px
+	border-radius: 50%
+	border: none
+	top: -40px
+	right: -40px	
+
+.modal-body
+	padding: 0
+	border: none
+	border-radius: 0			
+
+.modal-image-manager
+	position: absolute
+	bottom: 0
+	left: 64px
+	max-width: 472px
+	width: 100%
+	@include d-flex
+
+#callModal
+	.modal-body
+		width: calc(100% - 636px)
+		margin: 0 0 0 auto
+
+.modal-title
+	line-height: 90%
+	font-size: 70px
+	text-transform: uppercase
+	font-weight: 800
+	margin: 0 0 64px
+
+.phone-callback
+	display: flex
+	align-items: center
+	margin: 32px 0 64px
+	font-size: 40px
+	color: #fff
+	line-height: 90%
+	.svg-icon
+		margin: 0 12px 0 0
+		fill: $accent
+		width: 32px
+		height: 32px
+
+#thanksModal
+	.modal-body
+		max-width: 1016px
+		margin: 0 auto
+	.modal-title
+		max-width: 640px
+		margin: 0 auto 64px
+	.phone-callback
+		justify-content: center
+		margin: 32px auto 0
