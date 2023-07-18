@@ -35,6 +35,35 @@
   .form-call__icon {
     margin: 0 30px 0 0;
   }
+  .reviews-box {
+    height: 490px;
+  }
+  .reviews-slider .slide {
+    padding: 0 17px;
+  }
+  .callback-content {
+    padding: 32px;
+  }
+  .callback-manager {
+    max-width: 350px;
+  }
+  .callback-wrapper {
+    padding: 128px 0 64px 350px;
+  }
+  .help-box {
+    padding: 0 10px;
+  }
+  .callback-wrapper .form-call label {
+    min-width: 404px;
+    max-width: 404px;
+  }
+  .callback-wrapper .form-call input {
+    font-size: 28px;
+    padding: 10px 0;
+  }
+  .callback-wrapper .form-call button {
+    max-width: 404px;
+  }
 }
 @media only screen and (max-width: 1400px) {
   .nav-menu {
@@ -73,6 +102,9 @@
 @media only screen and (max-width: 1200px) {
   h1, h2, .modal-title {
     font-size: 64px;
+  }
+  h3 {
+    font-size: 32px;
   }
   .home {
     padding: 209px 0 40px;
@@ -171,5 +203,98 @@
   }
   .stages-work-box__number {
     margin: 0 32px 0 0;
+  }
+  .photo-gallery {
+    margin: 0 0 64px;
+  }
+  .photo-gallery .slick-prev {
+    left: 64px;
+  }
+  .photo-gallery .slick-next {
+    right: 64px;
+  }
+  .photo-gallery .slick-arrow {
+    top: 43%;
+  }
+  .photo-gallery__item {
+    width: 273px;
+    height: 273px;
+  }
+  .photo-gallery .slick-dots {
+    margin: 64px auto 0;
+  }
+  .reviews-slider {
+    width: calc(100% + 140px);
+  }
+  .reviews-slider .slick-next {
+    right: 120px;
+  }
+  .reviews-box {
+    width: 273px;
+  }
+  .callback-section {
+    margin-top: 40px;
+  }
+  .callback-wrapper {
+    padding: 128px 0 64px 0;
+  }
+  .callback-content {
+    position: relative;
+  }
+  .callback-manager {
+    position: relative;
+    width: 129px;
+    min-width: 129px;
+    margin: 0 40px 32px 32px;
+    z-index: 1;
+  }
+  .callback-manager::before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    border-radius: 50%;
+    background: #D9D9D9;
+    width: 129px;
+    height: 129px;
+    bottom: 0;
+    left: 0;
+  }
+  .callback-content h3 {
+    margin: 0 auto 32px;
+  }
+  .callback-content .mb-40 {
+    margin-bottom: 32px;
+  }
+  .help-box {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+    border: none;
+  }
+  .help-box__icon {
+    margin: 0 20px 0 0;
+  }
+  .help-box__body {
+    max-width: 283px;
+  }
+  .help-col {
+    position: relative;
+  }
+  .help-col::before {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    opacity: 0.1;
+    background: #fff;
+  }
+  .help-col:nth-child(even)::before {
+    display: none;
   }
 }
