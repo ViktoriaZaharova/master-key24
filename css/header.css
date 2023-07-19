@@ -9,6 +9,7 @@ header .list-social {
   margin: 0 68px 0 24px;
 }
 .phone {
+  font-weight: 600;
   color: #fff;
 }
 

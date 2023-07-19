@@ -19,6 +19,34 @@ $('.photo-gallery').slick({
 			breakpoint: 768,
 			settings: {
 				slidesToShow: 2,
+				variableWidth: false,
+				centerMode: false,
+				dots: true
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+				arrows: false,
+				dots: true,
+				variableWidth: false,
+				centerMode: false,
+			}
+		}
+	]
+});
+
+$('.services-slider').slick({
+	slidesToShow: 3,
+	dots: true,
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	responsive: [
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
 			}
 		},
 		{
@@ -29,13 +57,6 @@ $('.photo-gallery').slick({
 			}
 		}
 	]
-});
-
-$('.services-slider').slick({
-	slidesToShow: 3,
-	dots: true,
-	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
-	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>'
 });
 
 $('.services-shop-slider').slick({

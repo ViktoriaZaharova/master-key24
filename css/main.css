@@ -98,6 +98,9 @@
 .call-master h3 {
   margin: 0 auto 16px;
 }
+.call-master .consent {
+  color: #B0B3B8;
+}
 
 .call-master-wrapper {
   padding: 24px;
@@ -160,11 +163,8 @@
   width: 100%;
 }
 .form-call input {
-  font-size: 40px;
   color: #fff;
   padding: 0;
-  font-weight: 250;
-  text-transform: uppercase;
   text-align: center;
 }
 .form-call input::-webkit-input-placeholder {
@@ -239,6 +239,7 @@
   color: #fff;
   font-size: 24px;
   font-weight: 600;
+  line-height: 110%;
 }
 .services-item__photo {
   width: 100%;
@@ -300,6 +301,7 @@
   border-radius: 50%;
   width: 56px;
   height: 56px;
+  margin: 0 0 13px;
 }
 
 .services-shop {
@@ -323,6 +325,9 @@
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+}
+.services-shop-slider .slick-arrow {
+  top: 43%;
 }
 
 .location-work {
@@ -533,9 +538,6 @@
   padding: 10px 20px;
   min-width: 591px;
   max-width: 591px;
-}
-.callback-wrapper .form-call input {
-  height: 40px;
 }
 
 .callback-manager {
