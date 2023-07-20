@@ -119,3 +119,18 @@ $('.reviews-slider').slick({
 Fancybox.bind("[data-fancybox]", {
 	// Your custom options
 });
+
+
+(function ($) {
+	$(window).resize(function () {
+		if ($(this).width() < 576) {
+			$('.horizontal-scroll').mCustomScrollbar({
+				axis: "x",
+				theme: "my-theme",
+				scrollButtons: false
+			}); 
+		} else {
+			$('.horizontal-scroll').mCustomScrollbar("destroy"); //destroy scrollbar 
+		}
+	}).trigger("resize");
+})(jQuery);

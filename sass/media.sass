@@ -647,7 +647,10 @@
 		margin: 26px 0 0
 		&::after
 			width: 704px
-			height: 654px
+			height: 100%
+			top: 50%
+			left: 50%
+			transform: translate(-50%,-50%)
 
 	.list-cities
 		font-size: 14px
@@ -676,28 +679,115 @@
 		&__number
 			margin: 0 0 32px
 
-	.stages-work-scroll
-		flex-wrap: nowrap	!important
+	.horizontal-scroll, .horizontal-scroll-wrapper
+		padding-right: 0
 
-	.horizontal-scroll
-		overflow-x: auto
-		&::-webkit-scrollbar
-			width: 10px
-			height: 10px
-			border-radius: 38px
-		&::-webkit-scrollbar-track
-			background-color: #E35332
-			border-radius: 38px
-		&::-webkit-scrollbar-track-piece
-			background-color: rgba(255, 255, 255, 0.32)
-		&::-webkit-scrollbar-thumb
-			background-color: #E35332
-			border-radius: 38px
-		&::-webkit-scrollbar-corner
-			background-color: rgba(255, 255, 255, 0.32)
-		&::-webkit-resizer
-			background-color: #E35332
-			border-radius: 38px
+	.stages-work
+		margin: 25px 0 0
+
+	.documents-col
+		padding: 38px 0 0
+		width: 300px
+		margin: 0 24px 0 0
+
+	.documents-box
+		font-size: 14px
+
+	.documents-scroll
+		margin: 0 0 40px
+		&:last-child
+			margin: 0 0 16px
+		>*
+			padding: 0
+
+	.condition-col
+		padding-top: 0
+
+	.services-row
+		.mb-64
+			margin-bottom: 26px
+
+	.reviews-box
+		height: 605px
+		max-width: 340px
+		margin: 0 auto
+
+	.mb-xs-40
+		margin-bottom: 40px
+
+	.callback-wrapper .form-call
+		width: 100%
+		flex-wrap: wrap
+		label
+			max-width: none
+			margin: 0 0 16px
+			padding: 20px 0
+
+		button
+			max-width: none
+			width: 100%
+
+	.callback-wrapper
+		padding: 64px 0 40px
+		h4
+			margin: 0 auto 16px
+			max-width: 292px
+
+	.help-col
+		margin-bottom: 16px
+
+	.help-box
+		align-items: center
+		&__icon
+			margin: 0
+		&__body
+			max-width: none
+			padding: 0 0 0 16px
+			width: calc(100% - 56px)
+
+	.callback-manager
+		margin: 0 20px 24px 0
+		width: 85px
+		min-width: 85px
+		&::before
+			width: 85px
+			height: 85px
+
+
+	.callback-content
+		padding: 24px
+		h3
+			margin: 0 auto 24px
+
+	.contacts-section
+		.mb-40
+			margin-bottom: 24px		
+
+	.contacts-box
+		padding: 16px 24px 
+		font-size: 14px
+		display: flex
+		align-items: center		
+		&__icon
+			margin: 0 16px 0 0
+		&__text
+			margin: 0 auto	
+
+	footer
+		font-size: 12px
+		margin: 0 0 64px
+		line-height: 140%
+
+	.link-developer
+		flex-direction: column
+		align-items: flex-end
+		img
+			max-width: 25px
+			margin: 8px 0 0		
+
+	.copyright		
+		max-width: 150px
+		text-align: center	
 
 @media only screen and (max-width: 480px)
 
@@ -709,3 +799,6 @@
 			margin: 0 10px 10px 0
 			&:last-child
 				margin: 0 0 10px
+
+	h1
+		font-size: 25px

@@ -623,3 +623,43 @@
 .contacts-box:hover {
   color: #fff;
 }
+
+.horizontal-scroll .mCSB_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.mCSB_horizontal.mCSB_inside > .mCSB_container {
+  margin-bottom: 32px;
+}
+
+.mCSB_scrollTools {
+  opacity: 1;
+}
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal {
+  width: 37px;
+  height: 10px;
+  border-radius: 38px;
+}
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_draggerRail {
+  margin: 0;
+  height: 100%;
+  border-radius: 38px;
+  background: rgba(255, 255, 255, 0.32);
+}
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger .mCSB_dragger_bar {
+  margin: 0;
+  background: #E35332;
+  height: 10px;
+  width: 17px;
+  border-radius: 38px;
+}
+
+.mCSB_scrollTools.mCSB_scrollTools_horizontal .mCSB_dragger {
+  width: 17px;
+  min-width: 17px;
+}
