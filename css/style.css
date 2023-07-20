@@ -284,13 +284,19 @@ h1 {
   line-height: 90%;
 }
 
-h2 {
+h2, .h1 {
   width: 100%;
   text-align: center;
   text-transform: uppercase;
   font-size: 70px;
   font-weight: 800;
   line-height: 90%;
+}
+
+.h1 {
+  text-transform: none;
+  text-align: left;
+  margin: 0 0 64px;
 }
 
 h3 {
@@ -446,36 +452,54 @@ h4 {
   background: #E35332;
 }
 
-.label-checkbox {
-  position: relative;
+.breadcrumb-nav {
+  width: 100%;
+  margin: 0 0 64px;
+}
+
+.breadcrumb {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  color: rgba(255, 255, 255, 0.5);
-  font-size: 14px;
-  margin: 15px 0 0;
-  line-height: 1.14;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0;
+  padding: 0;
+  border-radius: 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+.breadcrumb a {
+  color: #fff;
+}
+.breadcrumb a:hover {
+  color: #E35332;
 }
 
-.inp-check {
-  display: none;
+.breadcrumb-item {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
 }
 
-.checkbox-custom {
-  margin: 0 12px 0 0;
-  position: relative;
-  border-radius: 6px;
-  background-color: #fff;
-  width: 16px;
-  height: 16px;
-  min-width: 16px;
-  cursor: pointer;
+.breadcrumb-item + .breadcrumb-item {
+  padding: 0;
+}
+.breadcrumb-item + .breadcrumb-item::before {
+  margin: 0 16px;
+  padding: 0;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 50%;
 }
 
-.inp-check:checked ~ .checkbox-custom {
-  background: #fff url("../img/check-black.svg") no-repeat center;
-  background-size: 8px;
+.breadcrumb-item.active {
+  color: #fff;
 }

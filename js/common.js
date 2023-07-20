@@ -123,14 +123,14 @@ Fancybox.bind("[data-fancybox]", {
 
 (function ($) {
 	$(window).resize(function () {
-		if ($(this).width() < 576) {
+		if ($(this).width() > 576) {
+			$('.horizontal-scroll').mCustomScrollbar("destroy"); //destroy scrollbar 
+		} else {
 			$('.horizontal-scroll').mCustomScrollbar({
 				axis: "x",
 				theme: "my-theme",
 				scrollButtons: false
 			}); 
-		} else {
-			$('.horizontal-scroll').mCustomScrollbar("destroy"); //destroy scrollbar 
 		}
 	}).trigger("resize");
 })(jQuery);

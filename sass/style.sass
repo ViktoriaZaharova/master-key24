@@ -197,13 +197,18 @@ h1
 	text-align: center
 	line-height: 90%
 
-h2
+h2, .h1
 	width: 100%
 	text-align: center
 	text-transform: uppercase
 	font-size: 70px
 	font-weight: 800
 	line-height: 90%
+
+.h1
+	text-transform: none
+	text-align: left
+	margin: 0 0 64px
 
 h3
 	text-align: center
@@ -321,30 +326,38 @@ h4
 		&.slick-active
 			background: $accent
 
-//checkbox my
-.label-checkbox
-	position: relative
+.breadcrumb-nav
+	width: 100%
+	margin: 0 0 64px
+
+.breadcrumb
 	display: flex
-	align-items: flex-start
-	color: rgba(255, 255, 255, 0.5)
-	font-size: 14px
-	margin: 15px 0 0
-	line-height: 1.14
+	align-items: center
+	margin: 0
+	padding: 0
+	border-radius: 0
+	font-size: 16px
+	font-weight: normal
+	a
+		color: #fff
+		&:hover
+			color: $accent
 
-.inp-check
-	display: none
+.breadcrumb-item
+	color: #fff
+	display: flex
+	align-items: center
+	padding: 0
 
-.checkbox-custom
-	margin: 0 12px 0 0
-	position: relative
-	border-radius: 6px
-	background-color: #fff
-	width: 16px
-	height: 16px
-	min-width: 16px
-	cursor: pointer
+.breadcrumb-item+.breadcrumb-item
+	padding: 0
+	&::before
+		margin: 0 16px
+		padding: 0
+		width: 4px
+		height: 4px
+		background: #fff
+		border-radius: 50%
 
-.inp-check:checked ~ .checkbox-custom
-	background: #fff url("../img/check-black.svg") no-repeat center
-	background-size: 8px
-//checkbox my end
+.breadcrumb-item.active
+	color: #fff	

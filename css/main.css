@@ -663,3 +663,33 @@
   width: 17px;
   min-width: 17px;
 }
+
+.page-section {
+  padding: 120px 0 0;
+  background: url("../img/page-bg.png") no-repeat center top;
+  background-size: 100%;
+}
+
+.services-page h3 {
+  text-align: left;
+}
+.services-page .services-item {
+  text-align: left;
+  font-size: 22px;
+}
+.services-page .services-item__price {
+  margin: 20px 0 0;
+  width: 100%;
+}
+.services-page .services-item__name {
+  margin: 0 auto 0 0;
+}
+
+.contacts-section-v2 h3 {
+  text-align: left;
+}
+.contacts-section-v2 .contacts-box__text {
+  width: 100%;
+  text-align: right;
+  display: block;
+}
