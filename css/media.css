@@ -211,7 +211,7 @@
   .advantages-col {
     border-right: 2px solid rgba(255, 255, 255, 0.1);
   }
-  .advantages-col:last-child {
+  .advantages-col:nth-child(even) {
     border: none;
   }
   .call-master h3 {
@@ -379,6 +379,55 @@
   .prices-page h1 {
     text-align: center;
     margin: 0 auto 40px;
+  }
+  .home-service {
+    padding: 150px 0 40px;
+  }
+  .home-service h1 {
+    text-align: center;
+    font-size: 72px;
+  }
+  .home-service .list-distance {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 40px 0;
+  }
+  .btn-modal {
+    margin: 0 auto;
+  }
+  .helper-service-item {
+    font-size: 24px;
+  }
+  .services h3 {
+    font-size: 32px;
+  }
+  .attention-box {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    font-size: 14px;
+    padding: 20px;
+  }
+  .attention-box__body {
+    width: 100%;
+    padding: 0;
+    margin: 32px 0 0;
+  }
+  .accordion-button {
+    padding: 0;
+    font-size: 20px;
+  }
+  .accordion-button::after {
+    position: relative;
+    right: 0;
+    top: 0;
+    margin: 0 0 0 20px;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .accordion-body {
+    font-size: 16px;
+    padding: 20px 0 0;
   }
 }
 @media only screen and (max-width: 992px) {
@@ -590,6 +639,29 @@
   }
   .mb-md-40 {
     margin-bottom: 40px;
+  }
+  .home-service {
+    padding: 150px 0 40px;
+  }
+  .home-service h1 {
+    font-size: 56px;
+    margin: 107px auto 0;
+  }
+  .home-service .list-distance {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 32px;
+  }
+  .home-service .list-distance li {
+    width: 100%;
+    margin: 0 0 24px;
+  }
+  .home-service .list-distance li:last-child {
+    margin: 0;
+  }
+  .home-service .list-distance li::after {
+    display: none;
   }
 }
 @media only screen and (max-width: 720px) {
@@ -1057,6 +1129,37 @@
   }
   .documents-scroll .mCSB_scrollTools .mCSB_draggerContainer {
     display: block;
+  }
+  .home-service {
+    padding: 78px 0 40px;
+    background: url("../img/service-bg-mobile.png") no-repeat center top;
+    background-size: 100%;
+  }
+  .home-service h1 {
+    font-size: 36px;
+    margin: 100px auto 0;
+  }
+  .home-service .list-distance {
+    font-size: 20px;
+  }
+  .helper-col {
+    margin: 0 40px 0 0;
+    width: 300px;
+  }
+  .helper-item {
+    font-size: 14px;
+  }
+  .helper-horizontal-scroll {
+    overflow-x: auto;
+    width: calc(100% + 20px);
+    margin: 0;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .helper-service-col {
+    padding: 0;
+    width: 300px;
+    margin: 0 40px 40px 0;
   }
 }
 @media only screen and (max-width: 350px) {

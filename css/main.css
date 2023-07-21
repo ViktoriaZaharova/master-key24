@@ -454,6 +454,7 @@
 
 .condition-box {
   padding: 24px;
+  background: #2E1C17;
 }
 .condition-box__icon {
   background: #E35332;
@@ -1062,7 +1063,7 @@
   color: #fff;
   background: transparent;
   border: none;
-  border-radius: 0;
+  border-radius: 20px;
   position: relative;
   margin: 0 0 20px;
   padding: 20px;
@@ -1074,7 +1075,7 @@
   margin: 0;
 }
 .accordion-item:first-child, .accordion-item:last-child {
-  border-radius: 0;
+  border-radius: 20px;
 }
 
 .accordion-body {

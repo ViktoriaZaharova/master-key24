@@ -191,7 +191,7 @@
 
 	.advantages-col
 		border-right: 2px solid rgba(#fff, .1)
-		&:last-child
+		&:nth-child(even)
 			border: none
 
 	.call-master
@@ -337,6 +337,48 @@
 		h1
 			text-align: center
 			margin: 0 auto 40px
+
+	.home-service
+		padding: 150px 0 40px
+		h1
+			text-align: center
+			font-size: 72px
+		.list-distance
+			display: flex
+			margin: 40px 0
+
+	.btn-modal
+		margin: 0 auto
+
+	.helper-service-item
+		font-size: 24px
+
+	.services
+		h3
+			font-size: 32px
+
+	.attention-box
+		flex-wrap: wrap
+		font-size: 14px
+		padding: 20px
+		&__body
+			width: 100%
+			padding: 0
+			margin: 32px 0 0
+
+	.accordion-button
+		padding: 0
+		font-size: 20px
+		&::after
+			position: relative
+			right: 0
+			top: 0
+			margin: 0 0 0 20px
+			transform: none
+
+	.accordion-body
+		font-size: 16px
+		padding: 20px 0 0
 
 @media only screen and (max-width: 992px)
 	.modal-image-manager
@@ -531,6 +573,22 @@
 
 	.mb-md-40
 		margin-bottom: 40px
+
+	.home-service
+		padding: 150px 0 40px
+		h1
+			font-size: 56px
+			margin: 107px auto 0
+		.list-distance
+			justify-content: center
+			font-size: 32px
+			li
+				width: 100%
+				margin: 0 0 24px
+				&:last-child
+					margin: 0
+				&::after
+					display: none
 
 @media only screen and (max-width: 720px)
 	.modal-dialog
@@ -936,6 +994,34 @@
 			overflow: hidden
 		.mCSB_scrollTools .mCSB_draggerContainer
 			display: block
+
+	.home-service
+		padding: 78px 0 40px
+		background: url('../img/service-bg-mobile.png') no-repeat center top
+		background-size: 100%
+		h1
+			font-size: 36px
+			margin: 100px auto 0
+		.list-distance
+			font-size: 20px
+
+	.helper-col
+		margin: 0 40px 0 0
+		width: 300px
+
+	.helper-item
+		font-size: 14px
+
+	.helper-horizontal-scroll
+		overflow-x: auto
+		width: calc(100% + 20px)
+		margin: 0
+		flex-wrap: nowrap
+
+	.helper-service-col
+		padding: 0
+		width: 300px
+		margin: 0 40px 40px 0
 
 @media only screen and (max-width: 480px)
 
