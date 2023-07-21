@@ -473,7 +473,7 @@
 	background-size: 100%
 
 .services-page
-	
+
 	h3
 		text-align: left
 	.services-item
@@ -493,3 +493,135 @@
 		text-align: right
 		display: block
 // page-section	end
+
+// prices page
+.prices-wrapper
+	width: 100%
+	padding: 32px
+	background: rgba(255, 255, 255, 0.10)
+	border-radius: 20px
+	font-size: 24px
+	font-weight: 600
+	line-height: 110%
+
+.price-list
+	width: 100%
+
+	li
+		display: flex
+		align-items: center
+		justify-content: space-between
+		border-bottom: 2px solid rgba(255, 255, 255, 0.10)
+		padding: 24px 0
+	&__name
+		width: calc(100% - 40px - 126px)
+		margin: 0 auto 0 0
+	&__value
+		color: $accent
+
+// prices page end
+
+// contacts page	
+.contacts-page		
+	.h1
+		margin: 0 0 40px
+
+.list-contacts
+	padding: 0 32px
+	font-size: 20px
+	font-weight: 600
+	line-height: 110%
+	>li
+		display: flex
+		align-items: center
+		padding: 24px 0
+		border-bottom: 2px solid rgba(255, 255, 255, 0.10)
+	&__icon
+		display: flex
+		align-items: center
+		stroke: #fff
+		width: 26px
+		height: 26px
+		min-width: 26px
+		margin: 0 24px 0 0
+	&__body
+		display: flex
+		align-items: center
+	.stroke-none
+		stroke: none
+		fill: #fff
+	a
+		color: #fff
+		&:hover
+			color: $accent
+	.mail
+		border-bottom: 2px dashed #fff
+		padding: 0 0 10px
+	.list-social
+		margin: 0 0 0 24px
+		li
+			a
+				width: 41px
+				height: 41px
+
+.stroke-none
+	stroke: none
+	fill: #fff
+// contacts page end	
+
+// callback-section	
+.callback
+	margin: 64px 0
+	.h2
+		margin: 0 0 40px
+
+
+
+.form-callback-wrapper
+	width: 100%
+	border-radius: 20px
+	background: #BBBCB6
+	padding: 32px
+
+.form-callback	
+	label
+		padding: 24px 0
+		border-bottom: 2px solid rgba(255, 255, 255, 0.10)
+		display: flex
+		align-items: center
+	.input-icon
+		width: 26px
+		height: 26px
+		min-width: 26px
+		margin: 0 24px 0 0
+		stroke: #fff
+		fill: none
+		@include d-flex
+	.stroke-none
+		fill: #fff
+		stroke: none	
+	input
+		font-size: 20px
+		text-transform: none
+		font-weight: 600
+		padding: 0
+		color: #fff
+		&::placeholder
+			color: #fff	
+	&__footer
+		display: flex
+		align-items: center
+		margin: 40px 0 0
+	[type="submit"]
+		padding: 20px 32px
+		height: 59px
+	.consent
+		margin: 0 
+		padding: 0 0 0 20px
+		width: calc(100% - 330px)
+		text-align: left
+		font-size: 14px
+		color: #fff
+
+
+// callback-section end

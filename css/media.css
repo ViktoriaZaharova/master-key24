@@ -364,6 +364,16 @@
   .services-page .services-item__photo {
     height: 420px;
   }
+  .mb-xl-40 {
+    margin-bottom: 40px;
+  }
+  .prices-page h4 {
+    text-align: center;
+  }
+  .prices-page h1 {
+    text-align: center;
+    margin: 0 auto 40px;
+  }
 }
 @media only screen and (max-width: 992px) {
   .modal-image-manager {
@@ -547,6 +557,33 @@
   }
   .services-page .services-item__photo {
     height: 325px;
+  }
+  .prices-wrapper {
+    font-size: 20px;
+  }
+  .price-list__name {
+    width: calc(100% - 40px - 100px);
+  }
+  .prices-page h4 {
+    font-size: 20px;
+  }
+  .list-contacts {
+    padding: 0 24px;
+  }
+  .list-contacts > li {
+    padding: 16px 0;
+  }
+  .contacts-page .h1, .contacts-page .h2, .callback .h1, .callback .h2 {
+    margin: 0 0 32px;
+  }
+  .h2 {
+    font-size: 32px;
+  }
+  .form-callback input {
+    font-size: 16px;
+  }
+  .mb-md-40 {
+    margin-bottom: 40px;
   }
 }
 @media only screen and (max-width: 720px) {
@@ -932,6 +969,58 @@
   }
   .contacts-section-v2 .contacts-box__text {
     text-align: left;
+  }
+  .price-list li {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .price-list__name {
+    width: 100%;
+    margin: 0 0 12px;
+  }
+  .prices-wrapper {
+    padding: 16px;
+  }
+  .list-contacts {
+    padding: 0;
+    font-size: 14px;
+  }
+  .list-contacts > li {
+    padding: 24px 0;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .list-contacts .list-social {
+    width: 100%;
+    margin: 24px 0 0;
+  }
+  .list-contacts .list-social li {
+    margin: 0 12px 0 0;
+  }
+  .contacts-page h1 {
+    text-align: center;
+  }
+  .form-callback-wrapper {
+    padding: 24px;
+  }
+  .form-callback input {
+    font-size: 14px;
+  }
+  .form-callback [type=submit] {
+    height: auto;
+    width: 100%;
+  }
+  .form-callback__footer {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  .form-callback__footer .consent {
+    margin: 20px 0 0;
+    padding: 0;
+    width: 100%;
+  }
+  .h2 {
+    font-size: 24px;
   }
 }
 @media only screen and (max-width: 350px) {
