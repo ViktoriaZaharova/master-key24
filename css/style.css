@@ -334,6 +334,10 @@ h4 {
   margin-bottom: 64px;
 }
 
+.mb-60 {
+  margin-bottom: 60px;
+}
+
 .mb-100 {
   margin-bottom: 100px;
 }
@@ -368,6 +372,18 @@ h4 {
 
 .bg-black-blue {
   background: #102229;
+}
+
+.bg-dark-blue {
+  background: #061B26;
+}
+
+.bg-dark-green {
+  background: #12310B;
+}
+
+.bg-dark-grey {
+  background: #434343;
 }
 
 .color-accent {

@@ -110,6 +110,12 @@
 	.services-page .services-item
 		font-size: 16px
 
+	.helper-item
+		font-size: 15px
+
+	h3, .h2
+		font-size: 36px
+
 @media only screen and (max-width: 1400px)
 	.nav-menu
 		width: 100%
@@ -895,7 +901,7 @@
 	.form-callback
 		input
 			font-size: 14px
-		[type='submit']	
+		[type='submit']
 			height: auto
 			width: 100%
 
@@ -907,7 +913,29 @@
 			width: 100%
 
 	.h2
-		font-size: 24px		
+		font-size: 24px
+
+	.horizontal-scroll
+		.mCSB_container
+			flex-wrap: nowrap
+
+	.documents-scroll
+		touch-action: pinch-zoom
+		.mCSB_container
+			overflow: hidden
+			margin: 0
+			> *
+				padding: 0
+			.documents-col
+				padding: 38px 0 0
+			.condition-col
+				padding: 0
+		.mCSB_inside > .mCSB_container
+			margin-right: 0
+		.mCustomScrollBox
+			overflow: hidden
+		.mCSB_scrollTools .mCSB_draggerContainer
+			display: block
 
 @media only screen and (max-width: 480px)
 

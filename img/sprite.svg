@@ -79,4 +79,9 @@
 			stroke-width="2" />
 	</symbol>
 
+	<symbol id="check" viewBox="0 0 23 16">
+		<path fill-rule="evenodd" clip-rule="evenodd"
+			d="M22.5254 1.84872L9.13185 16L0.525391 6.90617L2.27517 5.0575L9.13189 12.3025L20.7757 0L22.5254 1.84872Z"/>
+	</symbol>
+
 </svg>

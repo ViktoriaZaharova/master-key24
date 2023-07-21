@@ -113,6 +113,12 @@
   .services-page .services-item {
     font-size: 16px;
   }
+  .helper-item {
+    font-size: 15px;
+  }
+  h3, .h2 {
+    font-size: 36px;
+  }
 }
 @media only screen and (max-width: 1400px) {
   .nav-menu {
@@ -1021,6 +1027,36 @@
   }
   .h2 {
     font-size: 24px;
+  }
+  .horizontal-scroll .mCSB_container {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+  }
+  .documents-scroll {
+    -ms-touch-action: pinch-zoom;
+        touch-action: pinch-zoom;
+  }
+  .documents-scroll .mCSB_container {
+    overflow: hidden;
+    margin: 0;
+  }
+  .documents-scroll .mCSB_container > * {
+    padding: 0;
+  }
+  .documents-scroll .mCSB_container .documents-col {
+    padding: 38px 0 0;
+  }
+  .documents-scroll .mCSB_container .condition-col {
+    padding: 0;
+  }
+  .documents-scroll .mCSB_inside > .mCSB_container {
+    margin-right: 0;
+  }
+  .documents-scroll .mCustomScrollBox {
+    overflow: hidden;
+  }
+  .documents-scroll .mCSB_scrollTools .mCSB_draggerContainer {
+    display: block;
   }
 }
 @media only screen and (max-width: 350px) {

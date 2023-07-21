@@ -433,9 +433,24 @@
 // contacts section end
 
 .horizontal-scroll
-	// overflow-x: auto
 	.mCSB_container
 		display: flex
+		flex-wrap: wrap
+
+.documents-scroll
+	touch-action: none
+	.mCSB_container
+		overflow: visible
+		margin: 0 -20px
+		> *
+			padding: 0 20px
+	.mCSB_inside > .mCSB_container
+		margin-right: 0
+	.mCustomScrollBox
+		overflow: visible
+		padding: 0
+	.mCSB_scrollTools .mCSB_draggerContainer
+		display: none
 
 .mCSB_horizontal.mCSB_inside > .mCSB_container
 	margin-bottom: 32px
@@ -522,7 +537,7 @@
 // prices page end
 
 // contacts page	
-.contacts-page		
+.contacts-page
 	.h1
 		margin: 0 0 40px
 
@@ -575,15 +590,13 @@
 	.h2
 		margin: 0 0 40px
 
-
-
 .form-callback-wrapper
 	width: 100%
 	border-radius: 20px
 	background: #BBBCB6
 	padding: 32px
 
-.form-callback	
+.form-callback
 	label
 		padding: 24px 0
 		border-bottom: 2px solid rgba(255, 255, 255, 0.10)
@@ -599,7 +612,7 @@
 		@include d-flex
 	.stroke-none
 		fill: #fff
-		stroke: none	
+		stroke: none
 	input
 		font-size: 20px
 		text-transform: none
@@ -607,7 +620,7 @@
 		padding: 0
 		color: #fff
 		&::placeholder
-			color: #fff	
+			color: #fff
 	&__footer
 		display: flex
 		align-items: center
@@ -616,12 +629,171 @@
 		padding: 20px 32px
 		height: 59px
 	.consent
-		margin: 0 
+		margin: 0
 		padding: 0 0 0 20px
 		width: calc(100% - 330px)
 		text-align: left
 		font-size: 14px
 		color: #fff
-
-
 // callback-section end
+
+// home service 
+.home-service
+	background: url('../img/service-bg.jpg') no-repeat center top
+	background-size: cover
+	padding: 120px 0 40px
+	h1
+		text-align: left
+	.list-distance
+		justify-content: flex-start
+		margin: 40px 0 45px
+
+.helper-item
+	width: 100%
+	height: 100%
+	text-align: center
+	border-radius: 20px
+	background: #37403A
+	padding: 24px
+	line-height: 140%
+	&__icon
+		margin: 0 0 16px
+		display: flex
+		align-items: center
+		border-radius: 50%
+		background: #76A984
+		width: 56px
+		height: 56px
+		stoke: #000
+		padding: 16px
+
+.helper-service-item
+	.services-item__photo
+		height: 200px
+
+.description-subtitle
+	text-align: center
+	margin: 20px auto 0
+	line-height: 140%
+
+.services
+	.price-list__name
+		text-align: center
+
+.btn-modal
+	border-radius: 10px
+	padding: 18px 30px
+
+.attention-box
+	margin: 40px 0
+	display: flex
+	align-items: center
+	text-align: center
+	border-radius: 20px
+	background: rgba(255, 255, 255, 0.10)
+	padding: 32px
+	line-height: 140%
+	font-weight: 600
+	&__icon
+		position: relative
+		display: flex
+		flex-direction: column
+		align-items: center
+		justify-content: center
+		border-radius: 50%
+		background: $accent
+		width: 56px
+		height: 56px
+		min-width: 56px
+		&::before, &:after
+			content: ''
+			background: #fff
+			position: absolute
+			left: 50%
+			transform: translate(-50%,0)
+		&::before
+			width: 4px
+			height: 15px
+			top: 17px
+		&:after
+			width: 4px
+			height: 4px
+			bottom: 16px
+	&__body
+		width: calc(100% - 56px)
+		padding: 0 0 0 32px
+
+.payments-box
+	width: 100%
+	height: 100%
+	border-radius: 20px
+	text-align: center
+	font-weight: 600
+	line-height: 140%
+	padding: 24px
+	&__icon
+		margin: 0 0 16px
+		width: 56px
+		height: 56px
+		@include d-flex
+
+.accordion
+	color: #fff
+	background: transparent
+	border: none
+	border-radius: 0
+
+.accordion-item
+	color: #fff
+	background: transparent
+	border: none
+	border-radius: 0
+	position: relative
+	margin: 0 0 20px
+	padding: 20px
+	background: rgba(255, 255, 255, 0.10)
+	text-align: center
+	line-height: 140%
+	&:last-child
+		margin: 0
+	&:first-child, &:last-child
+		border-radius: 0
+
+.accordion-body
+	padding: 24px 96px 0 0
+
+.accordion-button
+	padding: 0 96px 0 0
+	border: none
+	background: transparent
+	color: #fff
+	font-size: 24px
+	font-weight: 600
+	margin: 0 auto
+	position: inherit
+	text-align: center
+	width: 100%
+	justify-content: center
+	&::after
+		background: url('../img/accordion-icon.svg') no-repeat center
+		background-size: 100%
+		width: 29px
+		height: 15px
+		position: absolute
+		top: 50%
+		right: 20px
+		transform: translate(0,-50%) rotate(180deg)
+	&:not(.collapsed)
+		color: #fff
+		background: transparent
+		box-shadow: none
+		&::after
+			background: url('../img/accordion-icon.svg') no-repeat center
+			background-size: 100%
+			transform: translate(0,-50%) rotate(0)
+	&:focus
+		box-shadow: none		
+
+.accordion-header
+	text-align: center			
+// home service end

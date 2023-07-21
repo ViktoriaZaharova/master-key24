@@ -1,7 +1,7 @@
 $('[name="phone"]').mask('+7 999 - 999 - 99 - 99');
 
 // sliders
-$('.photo-gallery').slick({
+$('.photo-gallery-v1').slick({
 	slidesToShow: 4,
 	variableWidth: true,
 	centerMode: true,
@@ -15,6 +15,37 @@ $('.photo-gallery').slick({
 				dots: true
 			}
 		},
+		{
+			breakpoint: 768,
+			settings: {
+				slidesToShow: 2,
+				variableWidth: false,
+				centerMode: false,
+				dots: true
+			}
+		},
+		{
+			breakpoint: 576,
+			settings: {
+				slidesToShow: 1,
+				arrows: false,
+				dots: true,
+				variableWidth: false,
+				centerMode: false,
+			}
+		}
+	]
+});
+
+$('.photo-gallery-v2').slick({
+	slidesToShow: 4,
+	variableWidth: true,
+	centerMode: true,
+	infinite: true,
+	dots: true,
+	prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+	nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+	responsive: [
 		{
 			breakpoint: 768,
 			settings: {
