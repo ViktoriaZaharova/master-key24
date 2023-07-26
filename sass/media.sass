@@ -734,6 +734,9 @@
 				margin: 24px auto 0
 				height: 50px
 				padding: 10px 25px
+		&__body
+			h3
+				padding: 0 0 0 88px	
 
 	.list-disc
 		li
@@ -1003,8 +1006,6 @@
 
 	.home-service
 		padding: 78px 0 40px
-		background: url('../img/service-bg-mobile.png') no-repeat center top
-		background-size: 100%
 		h1
 			font-size: 36px
 			margin: 100px auto 0
@@ -1029,6 +1030,12 @@
 		width: 300px
 		margin: 0 40px 40px 0
 
+	.help-col::before
+		display: none
+
+@media only screen and (max-width: 380px)
+	.callback-wrapper .form-call label
+		min-width: auto	
 
 @media only screen and (max-width: 350px)
 	.list-cities
@@ -1046,3 +1053,5 @@
 			.nav-link
 				padding: 21.5px 5px
 				height: 56px
+
+			
