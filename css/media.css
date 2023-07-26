@@ -704,11 +704,19 @@
   header {
     padding: 12px 0;
   }
-  header .list-social, header .nav-menu, header .phone {
+  header .list-social, header .phone, header .nav-menu {
     display: none;
   }
   header .phone {
     margin: 0 10px 0 0;
+  }
+  .mobile-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body {
+    padding: 0 0 56px;
   }
 }
 @media only screen and (max-width: 576px) {
@@ -1171,5 +1179,12 @@
   }
   h1 {
     font-size: 25px;
+  }
+  .mobile-menu {
+    font-size: 10px;
+  }
+  .mobile-menu .nav-item .nav-link {
+    padding: 21.5px 5px;
+    height: 56px;
   }
 }

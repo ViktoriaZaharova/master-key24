@@ -50,7 +50,7 @@ header
 	.dropdown-toggle::after
 		display: none
 	.dropdown-menu
-		min-width: 408px	
+		min-width: 408px
 
 .dropdown-menu
 	border: none
@@ -73,3 +73,38 @@ header
 	&:hover
 		background: $accent
 		color: #fff
+
+.mobile-menu
+	display: none
+	text-align: center
+	align-items: stretch
+	position: fixed
+	left: 0
+	bottom: 0
+	width: 100%
+	z-index: 3
+	background: #fff
+	margin: 0
+	font-size: 12px
+	.nav-item
+		margin: 0
+		flex: 1
+		.nav-link
+			width: 100%
+			padding: 20.5px 6px
+			position: relative
+			z-index: 1
+			color: #626262
+			&.active, &:hover
+				color: #000
+				&::before
+					width: 100%
+					&::before
+						content: ''
+						position: absolute
+						left: 0
+						bottom: 0
+						width: 0
+						height: 4px
+						border-radius: 2px 2px 0px 0px
+						background: #000
